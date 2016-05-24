@@ -18,17 +18,23 @@
     .bootstrap-dialog-close-button {
         font-size: 20px;
         float: right;
-        .opacity(0.9);
+        filter:alpha(opacity=90);
+        -moz-opacity:0.9;
+        -khtml-opacity: 0.9;
+        opacity: 0.9;
         &:hover {
             cursor: pointer;
-            .opacity(1.0);
+            filter: alpha(opacity=100);
+            -moz-opacity: 1;
+            -khtml-opacity: 1;
+            opacity: 1;
         }
     }
 
     /* dialog types */
     &.type-default {
         .modal-header {
-            background-color: @modal-content-bg;
+            background-color: #fff;
         }
         .bootstrap-dialog-title {
             color: #333;
@@ -37,31 +43,31 @@
 
     &.type-info {
         .modal-header {
-            background-color: @brand-info;
+            background-color: #5bc0de;
         }
     }
 
     &.type-primary {
         .modal-header {
-            background-color: @brand-primary;
+            background-color: #428bca;
         }
     }
 
     &.type-success {
         .modal-header {
-            background-color: @brand-success;
+            background-color: #5cb85c;
         }
     }
 
     &.type-warning {
         .modal-header {
-            background-color: @brand-warning;
+            background-color: #f0ad4e;
         }
     }
 
     &.type-danger {
         .modal-header {
-            background-color: @brand-danger;
+            background-color: #d9534f;
         }
     }
 
